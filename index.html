@@ -27,18 +27,99 @@
                 <header class="logo">
                     <nav class="navbar navbar-expand-lg pt-4">
                         <div class="container-lg">
-                            <a class="navbar-brand" href="index.html"><img class="img-fluid" src="images/logo-Echo.svg" alt="Logo Echo Studio"></a>
+                            <a class="navbar-brand" href="index.html"><img width="100" src="images/logo-Echo.svg" alt="Logo Echo Studio"></a>
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
                         </div>
+
+                        <div class="offcanvas offcanvas-end bg-op" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+                            <div class="offcanvas-header bg-op">
+                                <h4 class="offcanvas-title text-white" id="offcanvasNavbarLabel"><img width="50" src="images/logo-Echo.svg" alt="Logo Echo Estudio"> Echo Studio</h4>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item text-uppercase menu-item">
+                                        <a class="nav-link nav-link-home active" aria-current="page" href="index.html">Home</a>
+                                    </li>
+
+                                    <li class="nav-item text-uppercase menu-item">
+                                        <a class="nav-link text-white" href="about.html">Echo's Story</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown text-uppercase menu-item">
+                                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">What we Echo</a>
+
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                            <li><a class="dropdown-item text-white" href="#">Web Design</a></li>
+                                            <li><a class="dropdown-item text-white" href="#">Graphic Design</a></li>
+                                            <li><a class="dropdown-item text-white" href="#">UX/UI</a></li>
+
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+
+                                            <li><a class="dropdown-item text-white" href="#">Custom Service</a></li>
+                                            <li><a class="dropdown-item text-white" href="#">Service Plans</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown text-uppercase menu-item">
+                                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Echo's of Our Work</a>
+                                        
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                            <li><a class="dropdown-item text-white" href="#">Web Design Projects</a></li>
+                                            <li><a class="dropdown-item text-white" href="#">Graphic Design Projects</a></li>
+                                            <li><a class="dropdown-item text-white" href="#">UX/UI Projects</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item text-uppercase menu-item">
+                                        <a class="nav-link text-white" href="contact.html">Echo with us</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown text-uppercase menu-item">
+                                        <a class="nav-link dropdown-toggle text-white menu-item-a" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Echo Insights</a>
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                            <li><a class="dropdown-item text-white" href="#">Our Tempo</a></li>
+                                            <li><a class="dropdown-item text-white" href="#">Industry Trends</a></li>
+                                            <li><a class="dropdown-item text-white" href="#">Basic Design Tips</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="img-menu">
+                            <img src="images/Menu.svg" alt="Iconos">
+                        </div> -->
                     </nav>
                 </header>
             </div>
+
+            <!-- CONTENT HOME TEXT AND ICONS -->
+
+            <section class="container text-white mt-4 py-5">
+                <div class="row">
+                    <!-- CONTENT HOME TEXT -->
+                    <div class="col-12 col-lg-7 text-center d-flex align-items-center">
+                        <div class="content-home-text text-lg-start">
+                            <p class="text-uppercase">Echoing Visions Into Reality</p>
+                            <h1 class="text-uppercase">Creating Designs that Resonate</h1>
+                            <p>Echo Studio backs creative visions, transforming them into designs that resonate deeply. We believe in shaping a future where creativity meets technology, and every project echoes with purpose and innovation, crafted to meet client aspirations.</p>
+                        </div>
+                    </div>
+                    <!-- IMAGE ICONS -->
+                    <div class="img-menu col-12 col-lg-5 text-center pt-4">
+                        <img width="500" src="images/Menu.svg" alt="">
+                    </div>
+                </div>    
+            </section>
         </div>
         
-
-
-
-
-
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
