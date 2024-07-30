@@ -1,0 +1,47 @@
+:root {
+    /* ----- COLORS ----- */
+    --gray: #DBDBDB;
+    --green: #B5D335;
+    --white: #ffffff;
+    --background: #000000;
+  
+    /* ----- MOBILE TYPESCALES -----  */
+    --h1_mobile: 4.1rem;
+    --h2_mobile: 3.937rem;
+    --p_mobile: 1.062rem;
+  
+    /* ----- TABLET TYPESCALES -----  */
+    --h1_tablet: 5.312rem;
+    --h2_tablet: 5rem;
+    --p_tablet: 1.375rem;
+  
+  /* ----- DESKTOP TYPESCALES -----  */
+    --h1_desktop: 5.625rem;
+    --h2_desktop: 5.312rem;
+    --p_desktop: 1.875rem;
+}
+
+body {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 
+          "wdth" 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 200;
+}
+
+h1{
+    font-size: var(--h1_mobile);
+    line-height: 1;
+}
+
+p{
+    font-size: var(--p_mobile);
+    font-weight: 400;
+    line-height: 1.3;
+}
+
