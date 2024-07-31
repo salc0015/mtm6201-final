@@ -216,14 +216,19 @@ hr {
     border-radius: 50%;
 }
 
+/* ----- ANCHORS BUTTON ----- */
 
-/* .text-green a{ 
-    color: var(--green);
-} */
+a, button {
+    color: var(--white);
+    text-decoration: none;
+    /* transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; */
+}
 
-/* .home-link {
-    color: #B5D335;
-  } */
+a:hover, a:focus, button:hover, button:focus {
+    /* color: var(--green); */
+    background-color: transparent;
+    border-color: var(--green);
+}
 
 
 
@@ -231,14 +236,34 @@ hr {
 
 /* ----- FOOTER ----- */
 
+.footer-header a {
+    color: var(--green);
+    transition: color 0.3s ease;
+}
 
+.footer-header a:hover,
+.footer-header a:focus {
+    color: #DBDBDB; 
+}
 
+.footer-link {
+    transition: color 0.4s ease;
+}
 
+.footer-link:hover,
+.footer-link:focus {
+    color: #a8a8a8; 
+}
 
+.footer-icon img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
 
-
-
-
+.footer-icon:hover img,
+.footer-icon:focus img {
+    transform: scale(1.1);
+    filter: brightness(0) saturate(100%) invert(74%) sepia(98%) saturate(1%) hue-rotate(316deg) brightness(97%) contrast(97%);
+}
 
 
 
@@ -277,6 +302,9 @@ hr {
 
 
 @media screen and (max-width: 992px) {
+
+    /* ----- MENU GRADIENT MOVILE/TABLET ----- */
+
     .offcanvas.bg-opa {
       background: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(30, 30, 30, .80)) !important;
     }
