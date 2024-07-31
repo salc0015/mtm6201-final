@@ -102,7 +102,10 @@ hr {
 
 .icons-memu {
     filter: brightness(0) saturate(100%) invert(74%) sepia(98%) saturate(1%) hue-rotate(316deg) brightness(97%) contrast(97%);
-    transition: filter 0.05s ease;
+}
+
+.icons-memu img{
+    transition: transform 1s ease, filter 1s ease;
 }
 
 .icons-memu:hover, .icons-memu:focus  {
@@ -137,27 +140,25 @@ hr {
 
 /* ----- CONTACT PAGE ----- */
 
-/* .bot-social-icon {
+.bot-social-icon {
     position: relative; 
-} */
+}
 
 .bot-text {
     transform: translateX(70%); 
 }
 
-/* .icon-s img{
+.icon-s img{
     transition: transform 0.3s ease, filter .05s ease;
-} */
+}
 
 .icons img {
     filter: brightness(0) saturate(100%) invert(74%) sepia(98%) saturate(1%) hue-rotate(316deg) brightness(97%) contrast(97%);
 }
 
-.icons:hover img {
+.icons:hover img,
+.icons:focus img {
     filter: brightness(0) saturate(100%) invert(100%) sepia(19%) saturate(7375%) hue-rotate(9deg) brightness(85%) contrast(86%);
-}
-
-.icons:hover img {
     transform: scale(1.2) rotate(10deg);
 }
 
@@ -310,6 +311,12 @@ a:hover, a:focus, button:hover, button:focus {
 
 
 /* ----- FOOTER ----- */
+
+footer{
+    background-image: url(/images/footer_back.svg);
+    background-size: cover;
+    margin-top: 13rem;
+}
 
 .footer-header a {
     color: var(--green);
