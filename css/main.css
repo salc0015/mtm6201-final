@@ -54,3 +54,79 @@ p{
     z-index: -1;
 }
 
+/* ----- NAVBAR TEXT HOVER/FOCUS ----- */
+
+.navbar-nav .nav-item a{
+    position: relative;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #B5D335 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item a:hover,
+.navbar-nav .nav-item a:focus{
+    background-position: 0;
+}
+
+.navbar-nav .nav-item a:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    background-color: #B5D335;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item a:hover:before,
+.navbar-nav .nav-item a:focus:before {
+    width: 100%;
+}
+
+a, button {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+a:hover, a:focus, button:hover, button:focus {
+    color: var(--green);
+    background-color: transparent;
+    border-color: var(--green);
+
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23B5D335' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+hr {
+    border: 2px solid var(--green);
+    opacity: .7;
+}
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    .offcanvas.bg-opa {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(30, 30, 30, .80)) !important;
+    }
+
+    .bg-op{
+        background: linear-gradient(to right, rgba(30, 30, 30, .90), rgba(30, 30, 30, .80)) !important;
+    }
+
+    .navbar-nav .nav-item a {
+        white-space: normal;
+    }
+
+}
