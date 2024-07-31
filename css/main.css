@@ -108,6 +108,33 @@ hr {
 
 
 
+@media screen and (min-width: 992px){
+
+    /* ----- NAVBAR DESKTOP ----- */
+
+    .menu-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+      
+    .menu-item, .menu-item-a {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+      
+    .navbar-nav .nav-item a {
+        white-space: normal;
+    }
+
+    .nav-item a{
+        width: 7.812rem;
+    }
+
+}
 
 
 
@@ -119,9 +146,5 @@ hr {
     .bg-op{
         background: linear-gradient(to right, rgba(30, 30, 30, .90), rgba(30, 30, 30, .80)) !important;
     }
-
-    /* .navbar-nav .nav-item a {
-        white-space: normal;
-    } */
 
 }
