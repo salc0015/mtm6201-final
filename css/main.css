@@ -98,6 +98,139 @@ hr {
 }
 
 
+  /* ----- ABOUT PAGE ----- */
+
+.background-container-about {
+    position: absolute;
+    pointer-events: none; 
+}
+
+.background-container-about img {
+    width: 100%;
+} 
+
+.content-about{
+    margin-top: 6rem;
+}
+
+.container-about-p{
+    margin-top: 10.5rem;
+}
+
+.content-mision-vision{
+    margin: 3.5rem 0;
+}
+
+.content-beat, .content-philo, .content-values{
+    margin: 2rem 0;
+}
+
+
+
+/* ----- ABOUT PAGE ANIMATION FADE ----- */
+
+@media (prefers-reduced-motion: no-preference){
+    .fade-effect{
+      opacity: 0;
+      scale: 0.8;
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range: 50px 36%;
+    }
+  
+    @keyframes fade-in {
+      to {
+        opacity: 1;
+        scale: 1;
+      }
+    }
+  }
+
+  @keyframes move {
+    to {
+        transform: translateX(calc(-100% + 100vw));
+    }
+}
+
+#sectionPin {
+    height: 500vh;
+    overflow: visible;
+
+    view-timeline-name: --section-pin-tl;
+    view-timeline-axis: block;
+}
+
+/* ----- FOCUS IMG ICON BIG ----- */
+
+.img-focus-in{
+    animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both
+}
+    
+@keyframes text-focus-in{
+    0%{
+        filter:blur(12px);opacity:0
+    }
+    100%{
+        filter:blur(0);opacity:1
+    }
+}
+
+/* ----- HEARTBEAT ANIMATION - BEAT SECTION ----- */
+
+.heartbeat{
+    animation:heartbeat 1.5s ease-in-out infinite both
+}
+
+@keyframes heartbeat {
+    from{
+        transform:scale(1);transform-origin:center center;animation-timing-function:ease-out
+    }
+    10%{
+        transform:scale(.91);animation-timing-function:ease-in
+    }
+    17%{
+        transform:scale(.98);animation-timing-function:ease-out
+    }
+    33%{
+        transform:scale(.87);animation-timing-function:ease-in
+    }
+    45%{
+        transform:scale(1);animation-timing-function:ease-out
+    }
+} 
+
+
+
+
+/* ----- MENU ICONS EFFECT ----- */
+
+.glow-effect {
+    transition: box-shadow 0.5s, transform 0.5s;
+    outline: none; 
+}
+
+.glow-effect:hover img,
+.glow-effect:focus img {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #B5D335, 0 0 30px #B5D335, 0 0 45px #B5D335;
+    border-radius: 50%;
+}
+
+
+/* .text-green a{ 
+    color: var(--green);
+} */
+
+/* .home-link {
+    color: #B5D335;
+  } */
+
+
+
+
+
+/* ----- FOOTER ----- */
+
 
 
 
@@ -151,5 +284,10 @@ hr {
     .bg-op{
         background: linear-gradient(to right, rgba(30, 30, 30, .90), rgba(30, 30, 30, .80)) !important;
     }
+
+    /* .navbar-nav .nav-item a {
+        white-space: normal;
+    } */
+
 
 }
