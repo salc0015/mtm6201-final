@@ -15,6 +15,8 @@
 
     <body>
 
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
         <div class="wrapper-general bg-black">
             <div class="background-container-a">
                 <div class="background-container-about">
@@ -23,8 +25,8 @@
             </div>
             <div class="container">
                 <!-- HEADER LOGO AND NAVBAR -->
-                <header class="logo">
-                    <nav class="navbar navbar-expand-lg pt-4">
+                <header class="logo" role="banner">
+                    <nav class="navbar navbar-expand-lg pt-4" role="navigation" aria-label="Main navigation">
                         <div class="container-lg">
                             <a class="navbar-brand" href="index.html"><img class="w-50" src="images/logo-Echo.svg" alt="Logo Echo Studio"></a>
 
@@ -53,7 +55,7 @@
                                     <li class="nav-item dropdown text-uppercase menu-item">
                                         <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">What we Echo</a>
 
-                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                        <ul class="dropdown-menu dropdown-menu-dark" aria-label="submenu">
                                             <li><a class="dropdown-item text-white" href="#">Web Design</a></li>
                                             <li><a class="dropdown-item text-white" href="#">Graphic Design</a></li>
                                             <li><a class="dropdown-item text-white" href="#">UX/UI</a></li>
@@ -70,7 +72,7 @@
                                     <li class="nav-item dropdown text-uppercase menu-item">
                                         <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Echo's of Our Work</a>
                                         
-                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                        <ul class="dropdown-menu dropdown-menu-dark" aria-label="submenu">
                                             <li><a class="dropdown-item text-white" href="#">Web Design Projects</a></li>
                                             <li><a class="dropdown-item text-white" href="#">Graphic Design Projects</a></li>
                                             <li><a class="dropdown-item text-white" href="#">UX/UI Projects</a></li>
@@ -83,7 +85,8 @@
 
                                     <li class="nav-item dropdown text-uppercase menu-item">
                                         <a class="nav-link dropdown-toggle text-white menu-item-a" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Echo Insights</a>
-                                        <ul class="dropdown-menu dropdown-menu-dark">
+
+                                        <ul class="dropdown-menu dropdown-menu-dark" aria-label="submenu">
                                             <li><a class="dropdown-item text-white" href="#">Our Tempo</a></li>
                                             <li><a class="dropdown-item text-white" href="#">Industry Trends</a></li>
                                             <li><a class="dropdown-item text-white" href="#">Basic Design Tips</a></li>
@@ -92,6 +95,9 @@
                                 </ul>
                             </div>
                         </div>
+                        <!-- <div class="img-menu">
+                            <img src="images/Menu.svg" alt="Iconos">
+                        </div> -->
                     </nav>
                     <!-- ----- MENU ICONS ----- -->
                     <div class="img-menu-about d-flex justify-content-center pt-5">
@@ -104,128 +110,131 @@
                 </header>
             </div>
 
-            <!-- ----- SECTION ABOUT ----- -->
+            <main id="main-content">
 
-            <section class="container text-white pt-5">
-                <div class="row content-about">
-                    <div class="col-12 col-lg-6 text-center d-flex align-items-center">
-                        <div id="the-studio" class="content-home-text text-lg-start">
-                            <p class="text-uppercase">Inspiring Creativity Journeys</p>
-                            <h1 class="text-uppercase">The Studio</h1>
-                            <p>Welcome to Echo Studio, where we bring creative visions to life through impactful and innovative design. Our journey began with a belief in the transformative power of creativity. Today, we uphold this belief, ensuring every project reflects our commitment to quality and innovation.</p>
+                <!-- ----- SECTION ABOUT ----- -->
+
+                <section class="container text-white pt-5">
+                    <div class="row content-about">
+                        <div class="col-12 col-lg-6 text-center d-flex align-items-center">
+                            <div id="the-studio" class="content-home-text text-lg-start">
+                                <p class="text-uppercase">Inspiring Creativity Journeys</p>
+                                <h1 class="text-uppercase">The Studio</h1>
+                                <p>Welcome to Echo Studio, where we bring creative visions to life through impactful and innovative design. Our journey began with a belief in the transformative power of creativity. Today, we uphold this belief, ensuring every project reflects our commitment to quality and innovation.</p>
+                            </div>
+                        </div>
+                        <div class="img-menu col-12 col-lg-6 pt-4 d-flex justify-content-center img-focus-in">
+                            <img width="400" src="images/about-icon-ws.svg" alt="Icono en Imagen de About Page">
                         </div>
                     </div>
-                    <div class="img-menu col-12 col-lg-6 pt-4 d-flex justify-content-center img-focus-in">
-                        <img width="400" src="images/about-icon-ws.svg" alt="Icono en Imagen de About Page">
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- -----MISION - VISION SECTION ----- -->
+                <!-- -----MISION - VISION SECTION ----- -->
 
-            <section class="container text-white container-about-p">
-                <div class="row">
-                    <div class="col-12 col-lg-6 text-center d-flex align-items-center content-mision-vision">
-                        <div id="vision-mision" class="content-mision-text fade-effect">
-                            <p class="text-uppercase">Our Mission</p>
-                            <h1 class="text-uppercase">Empowering Creativity</h1>
-                            <p>Our mission is to empower creativity by providing a platform where innovative ideas can flousish. We strive to turn concepts into reality, delivering designs that not only meet but exceed our clients’ expectations.</p>
+                <section class="container text-white container-about-p">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 text-center d-flex align-items-center content-mision-vision">
+                            <div id="vision-mision" class="content-mision-text fade-effect">
+                                <p class="text-uppercase">Our Mission</p>
+                                <h1 class="text-uppercase">Empowering Creativity</h1>
+                                <p>Our mission is to empower creativity by providing a platform where innovative ideas can flousish. We strive to turn concepts into reality, delivering designs that not only meet but exceed our clients’ expectations.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-6 text-center d-flex align-items-center content-mision-vision">
-                        <div class="content-vision-text fade-effect">
-                            <p class="text-uppercase">Our Vision</p>
-                            <h1 class="text-uppercase">Design Leadership</h1>
-                            <p>We envision a future where Echo Studio sets the benchmark in design excellence. By continuously pushing the boundaries of creativity and technology, we aim to create work that is both visually stunning and deeply impactful.</p>
+                        <div class="col-12 col-lg-6 text-center d-flex align-items-center content-mision-vision">
+                            <div class="content-vision-text fade-effect">
+                                <p class="text-uppercase">Our Vision</p>
+                                <h1 class="text-uppercase">Design Leadership</h1>
+                                <p>We envision a future where Echo Studio sets the benchmark in design excellence. By continuously pushing the boundaries of creativity and technology, we aim to create work that is both visually stunning and deeply impactful.</p>
+                            </div>
                         </div>
-                    </div>
-                </div>    
-            </section>
+                    </div>    
+                </section>
 
-            <!-- ----- BEAT SECTION ----- -->
+                <!-- ----- BEAT SECTION ----- -->
 
-            <section class="container text-white container-about-p">
-                <div class="row content-about">
-                    <div id="our-beat" class="img-menu col-12 col-lg-6 d-flex justify-content-center content-beat heartbeat">
-                        <img class="fade-effect" width="400" src="images/beat-img.svg" alt="Beat image with a beat animation">
-                    </div>
-                    <div class="col-12 col-lg-6 text-center d-flex align-items-center content-beat">
-                        <div class="content-beat-text fade-effect text-lg-end">
-                            <p class="text-uppercase">Designing with Purpose</p>
-                            <h1 class="text-uppercase">Our Beat</h1>
-                            <p>Echo Studio thrives on a foundation of strong core values and a strategic approach to design. We believe that great design is not just about aesthetics but about creating a lasting connection with the audience.</p>
+                <section class="container text-white container-about-p">
+                    <div class="row content-about">
+                        <div id="our-beat" class="img-menu col-12 col-lg-6 d-flex justify-content-center content-beat heartbeat">
+                            <img class="fade-effect" width="400" src="images/beat-img.svg" alt="Beat image with a beat animation">
                         </div>
-                    </div>
-                </div>    
-            </section>
-
-            <!-- ----- PHILOSOPHY SECTION ----- -->
-
-            <section class="container text-white container-about-p">
-                <div class="row content-about">
-                    <div class="col-12 col-lg-6 text-center d-flex align-items-center content-philo">
-                        <div id="our-philosophy" class="content-beat-text fade-effect text-lg-start">
-                            <p class="text-uppercase">Our Philosophy</p>
-                            <h1 class="text-uppercase">Creating Meaningful Connections</h1>
-                            <p>Our mission is to empower creativity by providing a platform where innovative ideas can flousish. We strive to turn concepts into reality, delivering designs that not only meet but exceed our clients’ expectations.</p>
+                        <div class="col-12 col-lg-6 text-center d-flex align-items-center content-beat">
+                            <div class="content-beat-text fade-effect text-lg-end">
+                                <p class="text-uppercase">Designing with Purpose</p>
+                                <h1 class="text-uppercase">Our Beat</h1>
+                                <p>Echo Studio thrives on a foundation of strong core values and a strategic approach to design. We believe that great design is not just about aesthetics but about creating a lasting connection with the audience.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="img-menu col-12 col-lg-6 d-flex justify-content-center content-philo">
-                        <picture>
-                            <source srcset="images/philo-img-800_x_800.png,
-                                            images/philo-img-1600_x_1600.png 2x,
-                                            images/philo-img-2400_x_2400.png 3x"
-                                    media="(min-width: 1600px)">
-                            <source srcset="images/philo-img-640_x_640.png,
-                                            images/philo-img-1280_x_1280.png 2x,
-                                            images/philo-img-1920_x_1920.png 3x"
-                                    media="(min-width: 1280px)">
-                            <source srcset="images/philo-img-480_x_480.png,
-                                            images/philo-img-960_x_960.png 2x,
-                                            images/philo-img-1440_x_1440.png 3x"
-                                    media="(min-width: 960px)">
-                            <source srcset="images/philo-img-720_x_720.png,
-                                            images/philo-img-1440_x_1440.png 2x,
-                                            images/philo-img-2160_x_2160.png 3x"
-                                    media="(min-width: 720px)">
-                            <source srcset="images/philo-img-480_x_480.png,
-                                            images/philo-img-960_x_960.png 2x,
-                                            images/philo-img-1440_x_1440.png 3x"
-                                    media="(min-width: 480px)">
-                            <source srcset="images/philo-img-320_x_339.png,
-                                            images/philo-img-640_x_677.png 2x,
-                                            images/philo-img-960_x_1015.png 3x"
-                                    media="(max-width: 479px)">
-                            <img class="fade-effect" src="images/philo-img.png" alt="Image of a man jumping out of a cell phone">
-                        </picture>
-                    </div>
-                </div>    
-            </section>
+                    </div>    
+                </section>
 
+                <!-- ----- PHILOSOPHY SECTION ----- -->
 
-            <!-- ----- VALUES SECTION ----- -->
-
-            <section class="container text-white container-about-p pb-5">
-                <div class="row content-about">
-                    <div id="our-values" class="img-menu col-12 col-lg-6 d-flex justify-content-center content-values">
-                        <img class="fade-effect" width="400" src="images/values-img.svg" alt="Image of element with the text DO ECHO">
-                    </div>
-                    <div class="col-12 col-lg-6 text-center d-flex align-items-center content-values">
-                        <div class="content-beat-text fade-effect text-lg-end">
-                            <p class="text-uppercase">Our Values</p>
-                            <h1 class="text-uppercase">Principles that Guide Us</h1>
-                            <p>We hold creativity, integrity, and collaboration as our core values. These principles guide us in every project, helping us build strong, trusting relationships with our clients and deliver exceptional results.</p>
+                <section class="container text-white container-about-p">
+                    <div class="row content-about">
+                        <div class="col-12 col-lg-6 text-center d-flex align-items-center content-philo">
+                            <div id="our-philosophy" class="content-beat-text fade-effect text-lg-start">
+                                <p class="text-uppercase">Our Philosophy</p>
+                                <h1 class="text-uppercase">Creating Meaningful Connections</h1>
+                                <p>Our mission is to empower creativity by providing a platform where innovative ideas can flousish. We strive to turn concepts into reality, delivering designs that not only meet but exceed our clients’ expectations.</p>
+                            </div>
                         </div>
-                    </div>
-                </div>    
-            </section>
+                        <div class="img-menu col-12 col-lg-6 d-flex justify-content-center content-philo">
+                            <picture>
+                                <source srcset="images/philo-img-800_x_800.png,
+                                                images/philo-img-1600_x_1600.png 2x,
+                                                images/philo-img-2400_x_2400.png 3x"
+                                        media="(min-width: 1600px)">
+                                <source srcset="images/philo-img-640_x_640.png,
+                                                images/philo-img-1280_x_1280.png 2x,
+                                                images/philo-img-1920_x_1920.png 3x"
+                                        media="(min-width: 1280px)">
+                                <source srcset="images/philo-img-480_x_480.png,
+                                                images/philo-img-960_x_960.png 2x,
+                                                images/philo-img-1440_x_1440.png 3x"
+                                        media="(min-width: 960px)">
+                                <source srcset="images/philo-img-720_x_720.png,
+                                                images/philo-img-1440_x_1440.png 2x,
+                                                images/philo-img-2160_x_2160.png 3x"
+                                        media="(min-width: 720px)">
+                                <source srcset="images/philo-img-480_x_480.png,
+                                                images/philo-img-960_x_960.png 2x,
+                                                images/philo-img-1440_x_1440.png 3x"
+                                        media="(min-width: 480px)">
+                                <source srcset="images/philo-img-320_x_339.png,
+                                                images/philo-img-640_x_677.png 2x,
+                                                images/philo-img-960_x_1015.png 3x"
+                                        media="(max-width: 479px)">
+                                <img class="fade-effect" src="images/philo-img.png" alt="Image of a man jumping out of a cell phone">
+                            </picture>
+                        </div>
+                    </div>    
+                </section>
 
+
+                <!-- ----- VALUES SECTION ----- -->
+
+                <section class="container text-white container-about-p pb-5">
+                    <div class="row content-about">
+                        <div id="our-values" class="img-menu col-12 col-lg-6 d-flex justify-content-center content-values">
+                            <img class="fade-effect" width="400" src="images/values-img.svg" alt="Image of element with the text DO ECHO">
+                        </div>
+                        <div class="col-12 col-lg-6 text-center d-flex align-items-center content-values">
+                            <div class="content-beat-text fade-effect text-lg-end">
+                                <p class="text-uppercase">Our Values</p>
+                                <h1 class="text-uppercase">Principles that Guide Us</h1>
+                                <p>We hold creativity, integrity, and collaboration as our core values. These principles guide us in every project, helping us build strong, trusting relationships with our clients and deliver exceptional results.</p>
+                            </div>
+                        </div>
+                    </div>    
+                </section>
+
+            </main>
 
             <!-- ----- FOOTER ----- -->
 
-            <footer class="text-center text-lg-start text-white pt-5">
+            <footer class="text-center text-lg-start text-white pt-5" role="contentinfo">
                 <div class="container p-4 pb-0">
-                    <section class="">
+                    <section>
                         <div class="row">
                             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                                 <div class="footer-header c-gr text-uppercase mb-4 font-weight-bold"><a href="about.html">Echo's story</a></div>
@@ -285,10 +294,10 @@
                                 </div>
                             </div>
                             <div class="col-md-5 col-lg-4">
-                                <a href="https://www.instagram.com" class="footer-icon"><img width="45" src="images/instagram-icon.svg" alt="Instagram"></a>
-                                <a href="https://www.facebook.com" class="footer-icon mx-2"><img width="45" src="images/facebook-icon.svg" alt="Facebook"></a>
-                                <a href="https://www.x.com" class="footer-icon"><img width="45" src="images/twitter-icon.svg" alt="Twitter"></a>
-                                <a href="https://www.github.com" class="footer-icon mx-2"><img width="45" src="images/github-icon.svg" alt="GitHub"></a>
+                                <a href="https://www.instagram.com" class="footer-icon" aria-label="Instagram"><img width="45" src="images/instagram-icon.svg" alt="Instagram"></a>
+                                <a href="https://www.facebook.com" class="footer-icon mx-2" aria-label="Facebook"><img width="45" src="images/facebook-icon.svg" alt="Facebook"></a>
+                                <a href="https://www.x.com" class="footer-icon" aria-label="Twitter"><img width="45" src="images/twitter-icon.svg" alt="Twitter"></a>
+                                <a href="https://www.github.com" class="footer-icon mx-2" aria-label="GitHub"><img width="45" src="images/github-icon.svg" alt="GitHub"></a>
                             </div>
                         </div>
                     </section>
