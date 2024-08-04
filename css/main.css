@@ -131,6 +131,14 @@ hr {
 
 }
 
+.icon-size {
+    width: 4.375rem;
+}
+
+.img-size {
+    max-width: 500px;
+}
+
 .background-container-about {
     position: absolute;
     pointer-events: none; 
